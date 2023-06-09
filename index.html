@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+        <title>Todo</title>
+    </head>
+    <body>
+        <div id="content">
+            <div id="sidebar">
+                <button id="showTasksBtn">Show Tasks</button>
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <div id="main"></div>
+            <div id="popupContainer" class="popup-container">
+                <form id="taskForm" class="popup-form">
+                    <button type="button" id="closeBtn">Close</button><br>
+                    <label for="title">Title</label>
+                    <input type="text" name="title" placeholder="Title"><br>
+                    <label for="description">Description</label>
+                    <textarea type="text" name="description"
+                    placeholder="Description"></textarea><br>
+                    <label for="due">Due Date</label>
+                    <input type="date" name="due"><br>
+                    <label for="priority">Priority</label>
+                    <select name="priority">
+                        <option>select</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
